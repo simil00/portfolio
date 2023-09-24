@@ -22,7 +22,6 @@
     perspective-origin: 50% 50%;
     font-family: 'Space Mono', monospace;
 }
-  
 @keyframes scroll {
     100% {
       background-position: 0px -400%;
