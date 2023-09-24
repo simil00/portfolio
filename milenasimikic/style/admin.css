@@ -1,50 +1,55 @@
-#regr{
+#regr {
   margin-right: 2rem;
 }
+
 .title {
-    font-size: 2rem;
-    font-family: 'Syne', sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 5rem;
-    padding-left: 2rem;
+  font-size: 2rem;
+  font-family: 'Syne', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 5rem;
+  padding-left: 2rem;
+}
+
+.podnaslov {
+  font-family: 'Syne', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  padding-bottom: 2rem;
+
+}
+
+.wrapper {
+  animation: scroll 100s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
+    #111111;
+  color: #eee;
+  height: 100%;
+  min-height: 600px;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  font-family: 'Space Mono', monospace;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
   }
-  .podnaslov{
-    font-family: 'Syne', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    padding-bottom: 2rem;
-    
-  }
+}
+
+/* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
   .wrapper {
-    animation: scroll 100s linear infinite;
-    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
-      #111111;
-    color: #eee;
-    height: 100%;
-    min-height: 600px;
-    min-width: 360px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    font-family: 'Space Mono', monospace;
+    animation: scroll 800s linear infinite;
   }
-  @keyframes scroll {
-    100% {
-      background-position: 0px -400%;
-    }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
   }
-  /* Fallback if the operatring system prefers reduced motion*/
-  @media (prefers-reduced-motion) {
-    .wrapper {
-      animation: scroll 800s linear infinite;
-    }
-  }
-  @media (min-width: 670px) {
-    .title {
-      font-size: 5rem;
-    }
-  } 
-  
+}
