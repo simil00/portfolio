@@ -1,0 +1,73 @@
+#adm{
+  font-family: 'Syne', sans-serif;
+  font-style: italic;
+}
+.wrapper {
+  animation: scroll 100s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
+    #111111;
+  color: #eee;
+  height: 100%;
+  min-height: 657px;
+  min-width: 360px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  font-family: 'Space Mono', monospace;
+}
+@keyframes scroll {
+  100% {
+    background-position: 0px -400%;
+  }
+}
+/* Fallback if the operatring system prefers reduced motion*/
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 800s linear infinite;
+  }
+}
+.container{
+  margin-top: 50px;
+  max-width: 600px;
+  min-height: 320px;
+  border: 1px solid #949090;
+  background-color:black;
+  
+}
+#log{
+  color: white;
+  padding: 2rem;
+}
+#dgmp{
+  padding: 1rem;
+  text-align: center;
+}
+.container-fluid{
+  margin-top: 50px;
+  max-width: 600px;
+  min-height: 320px;
+  border: 1px solid #949090;
+  background-color:black;
+  color: white;
+}
+.rnk{
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+}
+.linkpr {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.linkpr:hover{
+  color: grey;
+}
+#adi{
+  text-align: center;
+  padding: 1rem;
+}
+#adi2{
+  text-align: center;
+}

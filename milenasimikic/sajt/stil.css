@@ -1,0 +1,84 @@
+body{
+	font-family: 'Oswald', sans-serif;
+}
+.sekcija {
+	min-height:98vh;
+	padding:10vh;
+}
+.pocetna{
+	background-image:url('pocetna.jpg');
+}
+.naslov{
+	display:flex;
+	justify-content: end;
+	padding-right: 11rem;
+    padding-top: 7rem;
+	font-family: 'Rubik Glitch', cursive;
+	color:#810a0a;
+}
+h2{
+	font-size:6rem
+}
+.nagrade{
+	padding:10vh;
+}
+.slika {
+    border-radius: 50%;
+    border-style: groove;
+    height: 10rem;
+    width: 10rem;
+	margin: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    margin-bottom: 2rem;
+	justify-content: center;
+}
+
+.card-deck .card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    border-style: initial;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+a {color: white;}
+a:hover {color: gray;}
+
+@media (max-width:761px) {
+  h2.responsive {
+    font-size: 1rem;
+  }
+@media (max-width:700px) {
+  .pocetna.responsive {
+    background-image:url('1.jpg');
+  }
+
+
+
